@@ -1,4 +1,6 @@
-import 'package:e_commerce/screen_size.dart';
+import 'package:e_commerce/shared/page_navigation.dart';
+import 'package:e_commerce/shared/screen_size.dart';
+import 'package:e_commerce/theme/text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,14 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'E-Commerce',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.indigo,
-        textTheme: GoogleFonts.poppinsTextTheme(
-          Theme.of(context).textTheme,
-        ),
-        useMaterial3: true,
-      ),
-      home: const ScreenSize(),
+      theme: theme(),
+      home: const PageNavigation(),
     );
   }
 }
