@@ -16,38 +16,37 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final style = Theme.of(context).textTheme;
     return FlashyTabBar(
-      animationCurve: Curves.easeInOutCubic,
-      backgroundColor: Colors.indigoAccent.shade200,
+      backgroundColor: Colors.black,
       selectedIndex: selectedIndex,
       showElevation: true,
       onItemSelected: onItemSelected,
       items: [
         FlashyTabBarItem(
           activeColor: Colors.white,
-          inactiveColor: const Color(0xff999999),
           icon: SvgPicture.asset(
             'assets/icons/home.svg',
             height: 20,
+            color: Colors.white,
           ),
           title: Text("Home",
               style: style.bodyMedium?.copyWith(color: Colors.white)),
         ),
         FlashyTabBarItem(
           activeColor: Colors.white,
-          inactiveColor: Colors.grey,
           icon: SvgPicture.asset(
             'assets/icons/cart.svg',
             height: 20,
+            color: Colors.white,
           ),
           title: Text("Cart",
               style: style.bodyMedium?.copyWith(color: Colors.white)),
         ),
         FlashyTabBarItem(
           activeColor: Colors.white,
-          inactiveColor: Colors.grey,
           icon: SvgPicture.asset(
             'assets/icons/user.svg',
             height: 20,
+            color: Colors.white,
           ),
           title: Text("Profile",
               style: style.bodyMedium?.copyWith(color: Colors.white)),

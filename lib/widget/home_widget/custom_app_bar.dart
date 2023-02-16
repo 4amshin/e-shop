@@ -16,7 +16,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
           horizontal: 20,
           vertical: 5,
         ),
-        color: Colors.indigoAccent.shade200,
+        color: Colors.black,
         child: Text(
           title!,
           style: const TextStyle(
@@ -30,9 +30,9 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
           padding: const EdgeInsets.only(right: 20),
           child: IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.favorite_rounded,
-              color: Colors.indigoAccent.shade200,
+              color: Colors.black,
             ),
           ),
         ),
