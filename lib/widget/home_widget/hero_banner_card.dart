@@ -19,9 +19,7 @@ class HeroBannerCard extends StatelessWidget {
         bottom: 25,
         top: 10,
       ),
-      padding: const EdgeInsets.only(
-        top: 150,
-      ),
+      // padding: const EdgeInsets.only(top: 150),
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/images/${newBanner.imgAsset}'),
@@ -40,14 +38,18 @@ class HeroBannerCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
-          vertical: 7,
+          vertical: 10,
         ),
         decoration: BoxDecoration(
-          color: Colors.black.withOpacity(0.6),
-          borderRadius: const BorderRadius.only(
-            bottomLeft: Radius.circular(20),
-            bottomRight: Radius.circular(20),
+          gradient: const LinearGradient(
+            end: Alignment.center,
+            begin: Alignment.bottomCenter,
+            colors: [
+              Colors.black54,
+              Colors.transparent,
+            ],
           ),
+          borderRadius: BorderRadius.circular(20),
         ),
         child: Align(
           alignment: Alignment.bottomLeft,
@@ -55,6 +57,7 @@ class HeroBannerCard extends StatelessWidget {
             newBanner.name ?? 'text here',
             style: style.bodyMedium?.copyWith(
               color: Colors.white,
+              fontWeight: FontWeight.bold,
             ),
           ),
         ),

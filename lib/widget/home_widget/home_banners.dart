@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:e_commerce/widget/home_widget/section_title.dart';
 import 'package:flutter/material.dart';
 
 import '../../model/banner.dart';
@@ -10,7 +11,9 @@ class HomeBanners extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.symmetric(
+        vertical: 6,
+      ),
       child: Column(
         children: [
           CarouselSlider(
@@ -26,7 +29,7 @@ class HomeBanners extends StatelessWidget {
                   (newBanner) => HeroBannerCard(newBanner: newBanner),
                 )
                 .toList(),
-          )
+          ),
         ],
       ),
     );
