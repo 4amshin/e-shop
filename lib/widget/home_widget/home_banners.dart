@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_commerce/widget/home_widget/section_title.dart';
 import 'package:flutter/material.dart';
 
-import '../../model/banner.dart';
+import '../../model/banner_model.dart';
 import 'hero_banner_card.dart';
 
 class HomeBanners extends StatelessWidget {

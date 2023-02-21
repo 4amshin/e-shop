@@ -1,20 +1,22 @@
-import 'package:e_commerce/shared/bottom_nav_bar.dart';
-import 'package:e_commerce/view/cart_page/cart_page.dart';
-import 'package:e_commerce/view/home_page/home_page.dart';
-import 'package:e_commerce/view/profile_page/profile_page.dart';
 import 'package:flutter/material.dart';
 
-class PageNavigation extends StatefulWidget {
-  const PageNavigation({Key? key}) : super(key: key);
+import '../../view/cart_page/cart_page.dart';
+import '../../view/home_page/home_view.dart';
+import '../../view/profile_page/profile_page.dart';
+import 'bottom_nav_bar.dart';
+
+class BottomNavWrapper extends StatefulWidget {
+  const BottomNavWrapper({Key? key}) : super(key: key);
 
   @override
-  State<PageNavigation> createState() => _PageNavigationState();
+  State<BottomNavWrapper> createState() => _BottomNavWrapperState();
 }
 
-class _PageNavigationState extends State<PageNavigation> {
+class _BottomNavWrapperState extends State<BottomNavWrapper> {
   int _selectedIndex = 0;
+
   final List<Widget> _widgetOptions = const <Widget>[
-    HomePage(),
+    HomeView(),
     CartPage(),
     ProfilePage(),
   ];

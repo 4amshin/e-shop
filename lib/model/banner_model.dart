@@ -22,12 +22,12 @@ class NewBanner extends Equatable {
       imgAsset: 'ginger-powder.jpg',
     ),
     NewBanner(
-      name: 'Ginger Drink',
-      imgAsset: 'ginger-drink.jpg',
-    ),
-    NewBanner(
       name: 'Neon Box',
       imgAsset: 'neon-box.jpg',
+    ),
+    NewBanner(
+      name: 'Ginger Drink',
+      imgAsset: 'ginger-drink.jpg',
     ),
     NewBanner(
       name: 'Sago',

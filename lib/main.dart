@@ -1,4 +1,5 @@
-import 'package:e_commerce/shared/page_navigation.dart';
+import 'package:e_commerce/shared/bottom_nav_v1/bottom_wrapper.dart';
+import 'package:e_commerce/shared/bottom_nav_v2.dart';
 import 'package:e_commerce/shared/screen_size.dart';
 import 'package:e_commerce/theme/text_theme.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'E-Commerce',
       debugShowCheckedModeBanner: false,
       theme: theme(),
-      home: const PageNavigation(),
+      home: const BottomNavV2(),
     );
   }
 }
